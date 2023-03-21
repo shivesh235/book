@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ujjawal Singh</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bd35d45e3d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Electronics Engineer</p>
+                <h1>Hi, I'm <span>Ujjawal Singh</span><br>From Uttar Pradesh, India</h1>
+            </div>
+        </div>
+    </div>
+<!---------------------------------------------------------------About------------------------------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/Photo.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hardworking and motivated student pursuing B. Tech degree eager to contribute developed knowledge in Software Engineer role. Adaptable and driven with strong work ethic and motivation to thrive in team-based or individually motivated settings. </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Eduaction</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming</span><br>Java (Intermediate), DSA (Intermediate),<br>C Programming (Begineer), Python (Begineer)</li>
+                            <li><span>Web Development</span><br>HTML (Intermediate), CSS (Intermediate),<br>JavaScript (Intermediate),React (Begineer)</li>
+                            <li><span>Internet of Things </span><br>Embedded C (Intermediate),<br>Node-Red (Begineer), Arduino(Begineer)</li>
+                            <li><span>Other Skills</span><br>Creative, Logical Thinking,<br>Communication Skill, Project Management</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor of Technology</span><br>Pursuing with an aggregate of 81%<br>in Electronics Engineering at Rajkiya Engineering College, Kannauj</li>
+                            <li><span>Intermediate (XII)</span><br>Passed with 86.8%<br>from R. S. M. Senior Secondary School, Gorakhpur </li>
+                            <li><span>Highschool (X)</span><br>Passed with 89.3%<br>from Woodland Academy, Gorakhpur</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <h3>Internships</h3>
+                            <li><span>Software Development</span><br>From July,2022 - August,2022<br>At Algocubes Pvt. Ltd. Noida</li>
+                            <li><span>Internet of Things </span><br>From March,2022 - June,2022<br>At Apsis Solutions, Karnataka</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------------------------------------------------Services---------------------------------------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, odit cum ullam optio neque modi excepturi hic? Ratione, dolorum reprehenderit, debitis, fugit numquam aut minus a dolore vero minima aspernatur.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>IoT Projects</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, odit cum ullam optio neque modi excepturi hic? Ratione, dolorum reprehenderit, debitis, fugit numquam aut minus a dolore vero minima aspernatur.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!------------------------------------------------------------Projects------------------------------------------------------------------->
+<div id="project">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <div class="work1">
+                    <img src="Images/work-1.jpeg">
+                        <div class="layer">
+                        <h3>Social Media Page</h3>
+                        <p>This project was made on a website called Codedamn. This project includes some images posted by followings of the person and it also showing the feeds. This web page can be opened in Mobile phones as well as Computers. </p>
+                        <a href="https://github.com/Ujjawal-1709/Instagram_Clone_Project"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-2.png">
+                    <div class="layer">
+                        <h3>Restaurant Page</h3>
+                        <p>This project was made using Visual Studio Code. This project includes some images of food in the menu of restaurant. This web page can be opened in Mobile phones as well as Computers. </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-3.png">
+                    <div class="layer">
+                        <h3>Dashboard and Data Analysis for IoT Application</h3>
+                        <p>This project is done by using node red. In this project many Dashboards are created using node red and Data of Current Weather of any particular city is analyzed using API Key from a website called openweathermap.org.</p>
+                        <a href="https://github.com/Ujjawal-1709/Dashboard-and-Data-Analysis-for-IoTApplication-Project"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!----------------------------------------------------------------Contact---------------------------------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>ujjawalsingh17092000@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+91-6386331933</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/naksh.singh.98892615"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/ujjawal-singh-981042225"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Ujjawal-1709"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="https://drive.google.com/file/d/1TUVEvpAHP2U6kwO-SqP6reeFjxPHC18q/view?usp=sharing" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Ujjawal. Made with <i class="fa-solid fa-heart"></i> by Ujjawal Singh</p>
+    </div>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-250px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyNoIS5v4jsWJgWQizmnh6hUbbk0CYGH4gefT_snFcXAmgEkrD6lrq2ihefybF-zXvvKQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Sucessfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+            })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
