@@ -4,5 +4,5 @@
 format: jb-book
 root: intro
 chapters:
-- file: deep_learning_notes
 - file: Tensorflow
+- file: Transfer_learning

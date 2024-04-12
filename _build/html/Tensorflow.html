@@ -65,7 +65,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'Tensorflow';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Deep Learning Notes" href="deep_learning_notes.html" />
+    <link rel="next" title="Transfer Learning" href="Transfer_learning.html" />
+    <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -149,8 +150,14 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Book - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Book - Home"/>`);</script>
   
-    <p class="title logo__title">Book</p>
   
 </a></div>
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
@@ -164,8 +171,8 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="deep_learning_notes.html">Deep Learning Notes</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Tensorflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Transfer_learning.html">Transfer Learning</a></li>
 </ul>
 
     </div>
@@ -394,16 +401,16 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2024-04-11 22:18:59.687555: I external/local_tsl/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
-2024-04-11 22:19:02.111519: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
-2024-04-11 22:19:02.111705: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
-2024-04-11 22:19:02.364053: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
-2024-04-11 22:19:03.098791: I external/local_tsl/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
-2024-04-11 22:19:03.102654: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2024-04-12 21:54:16.200215: I external/local_tsl/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+2024-04-12 21:54:16.274760: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-04-12 21:54:16.274859: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-04-12 21:54:16.277706: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-04-12 21:54:16.290415: I external/local_tsl/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+2024-04-12 21:54:16.291802: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
 To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2024-04-11 22:19:10.344414: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2024-04-12 21:54:20.304451: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
 </pre></div>
 </div>
 </div>
@@ -478,7 +485,7 @@ To enable the following instructions: AVX2 FMA, in other operations, rebuild Ten
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(TensorShape([100, 1]), TensorShape([100, 1]))
 </pre></div>
 </div>
-<img alt="_images/886cde88941c6b2821debfee94ab1c90181d558ede1aeee37e2b2e2cd380d417.png" src="_images/886cde88941c6b2821debfee94ab1c90181d558ede1aeee37e2b2e2cd380d417.png" />
+<img alt="_images/c30ff7d35c21d2c5e554b9471a3ef2a51e338ecbb9bb03b6ed8ded7b02f2e66d.png" src="_images/c30ff7d35c21d2c5e554b9471a3ef2a51e338ecbb9bb03b6ed8ded7b02f2e66d.png" />
 </div>
 </div>
 <p>Input and Output Shapes</p>
@@ -524,108 +531,506 @@ To enable the following instructions: AVX2 FMA, in other operations, rebuild Ten
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 1/50
-3/3 [==============================] - 1s 5ms/step - loss: 32.4371 - mae: 32.4371
-Epoch 2/50
-3/3 [==============================] - 0s 6ms/step - loss: 13.3526 - mae: 13.3526
-Epoch 3/50
-3/3 [==============================] - 0s 4ms/step - loss: 12.2113 - mae: 12.2113
-Epoch 4/50
-3/3 [==============================] - 0s 5ms/step - loss: 11.7418 - mae: 11.7418
-Epoch 5/50
-3/3 [==============================] - 0s 4ms/step - loss: 9.0784 - mae: 9.0784
-Epoch 6/50
-3/3 [==============================] - 0s 4ms/step - loss: 5.3874 - mae: 5.3874
-Epoch 7/50
-3/3 [==============================] - 0s 4ms/step - loss: 4.5035 - mae: 4.5035
-Epoch 8/50
-3/3 [==============================] - 0s 6ms/step - loss: 5.3165 - mae: 5.3165
-Epoch 9/50
-3/3 [==============================] - 0s 5ms/step - loss: 5.7168 - mae: 5.7168
-Epoch 10/50
-3/3 [==============================] - 0s 4ms/step - loss: 6.5915 - mae: 6.5915
-Epoch 11/50
-3/3 [==============================] - 0s 5ms/step - loss: 6.7439 - mae: 6.7439
-Epoch 12/50
-3/3 [==============================] - 0s 4ms/step - loss: 2.9795 - mae: 2.9795
-Epoch 13/50
-3/3 [==============================] - 0s 5ms/step - loss: 2.7247 - mae: 2.7247
-Epoch 14/50
-3/3 [==============================] - 0s 5ms/step - loss: 3.1446 - mae: 3.1446
-Epoch 15/50
-3/3 [==============================] - 0s 6ms/step - loss: 3.5443 - mae: 3.5443
-Epoch 16/50
-3/3 [==============================] - 0s 4ms/step - loss: 3.6381 - mae: 3.6381
-Epoch 17/50
-3/3 [==============================] - 0s 6ms/step - loss: 2.9051 - mae: 2.9051
-Epoch 18/50
-3/3 [==============================] - 0s 5ms/step - loss: 2.3177 - mae: 2.3177
-Epoch 19/50
-3/3 [==============================] - 0s 5ms/step - loss: 1.4081 - mae: 1.4081
-Epoch 20/50
-3/3 [==============================] - 0s 4ms/step - loss: 2.0835 - mae: 2.0835
-Epoch 21/50
-3/3 [==============================] - 0s 6ms/step - loss: 2.8613 - mae: 2.8613
-Epoch 22/50
-3/3 [==============================] - 0s 7ms/step - loss: 1.4441 - mae: 1.4441
-Epoch 23/50
-3/3 [==============================] - 0s 5ms/step - loss: 1.3450 - mae: 1.3450
-Epoch 24/50
-3/3 [==============================] - 0s 6ms/step - loss: 1.3711 - mae: 1.3711
-Epoch 25/50
-3/3 [==============================] - 0s 4ms/step - loss: 1.5316 - mae: 1.5316
-Epoch 26/50
-3/3 [==============================] - 0s 6ms/step - loss: 1.2653 - mae: 1.2653
-Epoch 27/50
-3/3 [==============================] - 0s 5ms/step - loss: 3.6071 - mae: 3.6071
-Epoch 28/50
-3/3 [==============================] - 0s 4ms/step - loss: 3.3237 - mae: 3.3237
-Epoch 29/50
-3/3 [==============================] - 0s 5ms/step - loss: 4.0876 - mae: 4.0876
-Epoch 30/50
-3/3 [==============================] - 0s 5ms/step - loss: 5.9073 - mae: 5.9073
-Epoch 31/50
-3/3 [==============================] - 0s 4ms/step - loss: 3.2352 - mae: 3.2352
-Epoch 32/50
-3/3 [==============================] - 0s 3ms/step - loss: 1.1600 - mae: 1.1600
-Epoch 33/50
-3/3 [==============================] - 0s 4ms/step - loss: 0.9668 - mae: 0.9668
-Epoch 34/50
-3/3 [==============================] - 0s 3ms/step - loss: 1.6538 - mae: 1.6538
-Epoch 35/50
-3/3 [==============================] - 0s 3ms/step - loss: 1.0816 - mae: 1.0816
-Epoch 36/50
-3/3 [==============================] - 0s 7ms/step - loss: 2.2175 - mae: 2.2175
-Epoch 37/50
-3/3 [==============================] - 0s 6ms/step - loss: 0.8366 - mae: 0.8366
-Epoch 38/50
-3/3 [==============================] - 0s 4ms/step - loss: 1.6337 - mae: 1.6337
-Epoch 39/50
-3/3 [==============================] - 0s 4ms/step - loss: 1.7671 - mae: 1.7671
-Epoch 40/50
-3/3 [==============================] - 0s 4ms/step - loss: 2.7831 - mae: 2.7831
-Epoch 41/50
-3/3 [==============================] - 0s 4ms/step - loss: 2.8828 - mae: 2.8828
-Epoch 42/50
-3/3 [==============================] - 0s 4ms/step - loss: 3.8504 - mae: 3.8504
-Epoch 43/50
-3/3 [==============================] - 0s 5ms/step - loss: 4.5543 - mae: 4.5543
-Epoch 44/50
-3/3 [==============================] - 0s 4ms/step - loss: 3.0315 - mae: 3.0315
-Epoch 45/50
-3/3 [==============================] - 0s 4ms/step - loss: 2.9878 - mae: 2.9878
-Epoch 46/50
-3/3 [==============================] - 0s 4ms/step - loss: 1.8942 - mae: 1.8942
-Epoch 47/50
-3/3 [==============================] - 0s 4ms/step - loss: 2.7361 - mae: 2.7361
-Epoch 48/50
-3/3 [==============================] - 0s 4ms/step - loss: 2.5382 - mae: 2.5382
-Epoch 49/50
-3/3 [==============================] - 0s 4ms/step - loss: 1.9236 - mae: 1.9236
-Epoch 50/50
-3/3 [==============================] - 0s 3ms/step - loss: 1.9266 - mae: 1.9266
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;keras.src.callbacks.History at 0x7f91fededa50&gt;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 2s - loss: 38.8645 - mae: 38.8645
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 1s 7ms/step - loss: 35.5119 - mae: 35.5119
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 2/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 36.1731 - mae: 36.1731
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 5ms/step - loss: 33.5957 - mae: 33.5957
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 3/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 29.8617 - mae: 29.8617
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 31.1423 - mae: 31.1423
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 4/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 33.1571 - mae: 33.1571
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 5ms/step - loss: 30.6729 - mae: 30.6729
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 5/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 32.4189 - mae: 32.4189
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 30.7701 - mae: 30.7701
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 6/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 35.1949 - mae: 35.1949
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 31.2172 - mae: 31.2172
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 7/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 22.5678 - mae: 22.5678
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 31.3881 - mae: 31.3881
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 8/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 32.9032 - mae: 32.9032
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 30.4555 - mae: 30.4555
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 9/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 24.7929 - mae: 24.7929
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 31.1253 - mae: 31.1253
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 10/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 34.9557 - mae: 34.9557
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 29.8158 - mae: 29.8158
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 11/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 31.3921 - mae: 31.3921
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 29.6985 - mae: 29.6985
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 12/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 28.8511 - mae: 28.8511
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 29.4752 - mae: 29.4752
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 13/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 33.6792 - mae: 33.6792
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 30.6087 - mae: 30.6087
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 14/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 21.4778 - mae: 21.4778
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 30.8908 - mae: 30.8908
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 15/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 30.4638 - mae: 30.4638
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 30.3128 - mae: 30.3128
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 16/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 29.3762 - mae: 29.3762
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 29.2103 - mae: 29.2103
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 17/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 30.5466 - mae: 30.5466
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 31.1954 - mae: 31.1954
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 18/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 28.4861 - mae: 28.4861
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 29.5505 - mae: 29.5505
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 19/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 29.7030 - mae: 29.7030
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 30.8567 - mae: 30.8567
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 20/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 32.2295 - mae: 32.2295
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 30.0509 - mae: 30.0509
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 21/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 30.8216 - mae: 30.8216
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 29.2979 - mae: 29.2979
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 22/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 36.7996 - mae: 36.7996
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 28.1848 - mae: 28.1848
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 23/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 27.4505 - mae: 27.4505
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 28.1844 - mae: 28.1844
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 24/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 32.5558 - mae: 32.5558
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 28.1056 - mae: 28.1056
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 25/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 26.4993 - mae: 26.4993
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 27.9362 - mae: 27.9362
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 26/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 22.2666 - mae: 22.2666
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 27.0195 - mae: 27.0195
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 27/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 25.9235 - mae: 25.9235
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 26.8508 - mae: 26.8508
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 28/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 21.0750 - mae: 21.0750
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 26.1546 - mae: 26.1546
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 29/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 27.1622 - mae: 27.1622
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 26.0827 - mae: 26.0827
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 30/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 27.0027 - mae: 27.0027
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 27.6784 - mae: 27.6784
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 31/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 30.0827 - mae: 30.0827
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 27.2131 - mae: 27.2131
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 32/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 21.8600 - mae: 21.8600
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 27.6427 - mae: 27.6427
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 33/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 28.1251 - mae: 28.1251
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 27.4856 - mae: 27.4856
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 34/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 20.7876 - mae: 20.7876
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 26.5243 - mae: 26.5243
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 35/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 23.5024 - mae: 23.5024
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 25.6910 - mae: 25.6910
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 36/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 28.8993 - mae: 28.8993
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 25.8206 - mae: 25.8206
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 37/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 26.8270 - mae: 26.8270
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 24.9074 - mae: 24.9074
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 38/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 23.8852 - mae: 23.8852
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 24.9491 - mae: 24.9491
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 39/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 30.9292 - mae: 30.9292
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 24.5334 - mae: 24.5334
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 40/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 27.1868 - mae: 27.1868
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 24.2752 - mae: 24.2752
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 41/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 27.9376 - mae: 27.9376
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 23.9306 - mae: 23.9306
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 42/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 24.2558 - mae: 24.2558
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 23.7764 - mae: 23.7764
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 43/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 31.6650 - mae: 31.6650
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 23.5526 - mae: 23.5526
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 44/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 24.4720 - mae: 24.4720
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 23.8878 - mae: 23.8878
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 45/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 23.6922 - mae: 23.6922
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 25.3066 - mae: 25.3066
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 46/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 18.7754 - mae: 18.7754
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 23.9142 - mae: 23.9142
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 47/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 19.9239 - mae: 19.9239
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 23.4367 - mae: 23.4367
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 48/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 21.2266 - mae: 21.2266
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 22.6461 - mae: 22.6461
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 49/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 18.2067 - mae: 18.2067
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 22.5908 - mae: 22.5908
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 50/50
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/3 [=========&gt;....................] - ETA: 0s - loss: 29.6499 - mae: 29.6499
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+3/3 [==============================] - 0s 4ms/step - loss: 25.1669 - mae: 25.1669
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;keras.src.callbacks.History at 0x72ff0046d590&gt;
 </pre></div>
 </div>
 </div>
@@ -637,10 +1042,14 @@ Epoch 50/50
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/1 [==============================] - 0s 82ms/step
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/1 [==============================] - ETA: 0s
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[43.870934]], dtype=float32)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+1/1 [==============================] - 0s 153ms/step
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[34.245274]], dtype=float32)
 </pre></div>
 </div>
 </div>
@@ -653,22 +1062,54 @@ Epoch 50/50
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Model: &quot;model&quot;
-_________________________________________________________________
- Layer (type)                Output Shape              Param #   
-=================================================================
- hidden1 (Dense)             (None, 5)                 10        
-                                                                 
- hidden2 (Dense)             (None, 5)                 30        
-                                                                 
- hidden3 (Dense)             (None, 5)                 30        
-                                                                 
- output (Dense)              (None, 1)                 6         
-                                                                 
-=================================================================
-Total params: 76 (304.00 Byte)
-Trainable params: 76 (304.00 Byte)
-Non-trainable params: 0 (0.00 Byte)
-_________________________________________________________________
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>_________________________________________________________________
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Layer (type)                Output Shape              Param #   
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>=================================================================
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> hidden1 (Dense)             (None, 5)                 10        
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                                 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> hidden2 (Dense)             (None, 5)                 30        
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                                 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> hidden3 (Dense)             (None, 5)                 30        
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                                 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> output (Dense)              (None, 1)                 6         
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                                                                 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>=================================================================
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Total params: 76 (304.00 Byte)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Trainable params: 76 (304.00 Byte)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Non-trainable params: 0 (0.00 Byte)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>_________________________________________________________________
 </pre></div>
 </div>
 </div>
@@ -704,39 +1145,43 @@ _________________________________________________________________
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/1 [==============================] - 0s 70ms/step
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/1 [==============================] - ETA: 0s
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[43.870934],
-       [45.575344],
-       [47.279755],
-       [48.982975],
-       [50.686028],
-       [52.389065],
-       [54.092106],
-       [55.795155],
-       [57.498207],
-       [59.20125 ],
-       [60.90429 ],
-       [62.607338],
-       [64.31039 ],
-       [66.013435],
-       [67.71647 ],
-       [69.41951 ],
-       [71.12256 ],
-       [72.82561 ],
-       [74.52864 ],
-       [76.23169 ],
-       [77.93473 ],
-       [79.63779 ],
-       [81.34083 ],
-       [83.04386 ],
-       [84.7469  ],
-       [86.44996 ],
-       [88.15299 ],
-       [89.85604 ],
-       [91.55889 ],
-       [93.26173 ]], dtype=float32)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+1/1 [==============================] - 0s 116ms/step
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[34.245274],
+       [35.62153 ],
+       [36.997776],
+       [38.37403 ],
+       [39.750282],
+       [41.12654 ],
+       [42.50279 ],
+       [43.879044],
+       [45.255295],
+       [46.631542],
+       [48.007793],
+       [49.38404 ],
+       [50.760303],
+       [52.13655 ],
+       [53.512802],
+       [54.88906 ],
+       [56.265312],
+       [57.641556],
+       [59.017815],
+       [60.394066],
+       [61.770325],
+       [63.14657 ],
+       [64.52283 ],
+       [65.89908 ],
+       [67.27532 ],
+       [68.65158 ],
+       [70.02784 ],
+       [71.40408 ],
+       [72.780334],
+       [74.156586]], dtype=float32)
 </pre></div>
 </div>
 </div>
@@ -755,7 +1200,7 @@ _________________________________________________________________
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/7fd71da991d45712319f14a5eb779fdec30ecb829ce46f6753f29dc91941063a.png" src="_images/7fd71da991d45712319f14a5eb779fdec30ecb829ce46f6753f29dc91941063a.png" />
+<img alt="_images/1caa99f8bc5dfdcd4fe8268db40795e15a6e9cdc1266a1e550eebc23d4420d48.png" src="_images/1caa99f8bc5dfdcd4fe8268db40795e15a6e9cdc1266a1e550eebc23d4420d48.png" />
 </div>
 </div>
 <p><strong>Evaluating Predictions</strong></p>
@@ -774,10 +1219,14 @@ _________________________________________________________________
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/1 [==============================] - 0s 244ms/step - loss: 10.4322 - mae: 10.4322
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/1 [==============================] - ETA: 0s - loss: 24.7991 - mae: 24.7991
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[10.432185173034668, 10.432185173034668]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+1/1 [==============================] - 0s 224ms/step - loss: 24.7991 - mae: 24.7991
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[24.799068450927734, 24.799068450927734]
 </pre></div>
 </div>
 </div>
@@ -803,7 +1252,7 @@ _________________________________________________________________
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>10.432185
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>24.799068
 </pre></div>
 </div>
 </div>
@@ -817,7 +1266,7 @@ _________________________________________________________________
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>115.4357
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>644.141
 </pre></div>
 </div>
 </div>
@@ -1307,7 +1756,7 @@ memory usage: 73.3+ KB
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/ee78d68943f6ecde68662542a4ba315a1d78ffb4868f4ba9e15addb536479ff0.png" src="_images/ee78d68943f6ecde68662542a4ba315a1d78ffb4868f4ba9e15addb536479ff0.png" />
+<img alt="_images/2288a0f68f57a2bd465dcccdb526f77a04bd6cdc1388a271b0d59b2db902e74b.png" src="_images/2288a0f68f57a2bd465dcccdb526f77a04bd6cdc1388a271b0d59b2db902e74b.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1318,10 +1767,14 @@ memory usage: 73.3+ KB
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>9/9 [==============================] - 0s 4ms/step - loss: 5553.9766 - mae: 5553.9766
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/9 [==&gt;...........................] - ETA: 1s - loss: 3422.6494 - mae: 3422.6494
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[5553.9765625, 5553.9765625]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+9/9 [==============================] - 0s 2ms/step - loss: 5494.6738 - mae: 5494.6738
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[5494.673828125, 5494.673828125]
 </pre></div>
 </div>
 </div>
@@ -1353,10 +1806,14 @@ memory usage: 73.3+ KB
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>9/9 [==============================] - 0s 3ms/step - loss: 4831.3711 - mae: 4831.3711
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/9 [==&gt;...........................] - ETA: 1s - loss: 2938.0881 - mae: 2938.0881
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[4831.37109375, 4831.37109375]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+9/9 [==============================] - 0s 2ms/step - loss: 4182.3481 - mae: 4182.3481
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[4182.34814453125, 4182.34814453125]
 </pre></div>
 </div>
 </div>
@@ -1372,90 +1829,71 @@ memory usage: 73.3+ KB
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">31</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;insurance.csv&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
+<span class="nn">File ~/miniconda3/envs/env1/lib/python3.11/site-packages/pandas/io/parsers/readers.py:948,</span> in <span class="ni">read_csv</span><span class="nt">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, date_format, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options, dtype_backend)</span>
+<span class="g g-Whitespace">    </span><span class="mi">935</span> <span class="n">kwds_defaults</span> <span class="o">=</span> <span class="n">_refine_defaults_read</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">936</span>     <span class="n">dialect</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">937</span>     <span class="n">delimiter</span><span class="p">,</span>
+   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">944</span>     <span class="n">dtype_backend</span><span class="o">=</span><span class="n">dtype_backend</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">945</span> <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">946</span> <span class="n">kwds</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">kwds_defaults</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">948</span> <span class="k">return</span> <span class="n">_read</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="n">kwds</span><span class="p">)</span>
 
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>age</th>
-      <th>bmi</th>
-      <th>children</th>
-      <th>charges</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>count</th>
-      <td>1338.000000</td>
-      <td>1338.000000</td>
-      <td>1338.000000</td>
-      <td>1338.000000</td>
-    </tr>
-    <tr>
-      <th>mean</th>
-      <td>39.207025</td>
-      <td>30.663397</td>
-      <td>1.094918</td>
-      <td>13270.422265</td>
-    </tr>
-    <tr>
-      <th>std</th>
-      <td>14.049960</td>
-      <td>6.098187</td>
-      <td>1.205493</td>
-      <td>12110.011237</td>
-    </tr>
-    <tr>
-      <th>min</th>
-      <td>18.000000</td>
-      <td>15.960000</td>
-      <td>0.000000</td>
-      <td>1121.873900</td>
-    </tr>
-    <tr>
-      <th>25%</th>
-      <td>27.000000</td>
-      <td>26.296250</td>
-      <td>0.000000</td>
-      <td>4740.287150</td>
-    </tr>
-    <tr>
-      <th>50%</th>
-      <td>39.000000</td>
-      <td>30.400000</td>
-      <td>1.000000</td>
-      <td>9382.033000</td>
-    </tr>
-    <tr>
-      <th>75%</th>
-      <td>51.000000</td>
-      <td>34.693750</td>
-      <td>2.000000</td>
-      <td>16639.912515</td>
-    </tr>
-    <tr>
-      <th>max</th>
-      <td>64.000000</td>
-      <td>53.130000</td>
-      <td>5.000000</td>
-      <td>63770.428010</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
+<span class="nn">File ~/miniconda3/envs/env1/lib/python3.11/site-packages/pandas/io/parsers/readers.py:611,</span> in <span class="ni">_read</span><span class="nt">(filepath_or_buffer, kwds)</span>
+<span class="g g-Whitespace">    </span><span class="mi">608</span> <span class="n">_validate_names</span><span class="p">(</span><span class="n">kwds</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;names&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">))</span>
+<span class="g g-Whitespace">    </span><span class="mi">610</span> <span class="c1"># Create the parser.</span>
+<span class="ne">--&gt; </span><span class="mi">611</span> <span class="n">parser</span> <span class="o">=</span> <span class="n">TextFileReader</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">613</span> <span class="k">if</span> <span class="n">chunksize</span> <span class="ow">or</span> <span class="n">iterator</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">614</span>     <span class="k">return</span> <span class="n">parser</span>
+
+<span class="nn">File ~/miniconda3/envs/env1/lib/python3.11/site-packages/pandas/io/parsers/readers.py:1448,</span> in <span class="ni">TextFileReader.__init__</span><span class="nt">(self, f, engine, **kwds)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1445</span>     <span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">kwds</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span>
+<span class="g g-Whitespace">   </span><span class="mi">1447</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span><span class="p">:</span> <span class="n">IOHandles</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="ne">-&gt; </span><span class="mi">1448</span> <span class="bp">self</span><span class="o">.</span><span class="n">_engine</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_engine</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">engine</span><span class="p">)</span>
+
+<span class="nn">File ~/miniconda3/envs/env1/lib/python3.11/site-packages/pandas/io/parsers/readers.py:1705,</span> in <span class="ni">TextFileReader._make_engine</span><span class="nt">(self, f, engine)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1703</span>     <span class="k">if</span> <span class="s2">&quot;b&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">mode</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1704</span>         <span class="n">mode</span> <span class="o">+=</span> <span class="s2">&quot;b&quot;</span>
+<span class="ne">-&gt; </span><span class="mi">1705</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="o">=</span> <span class="n">get_handle</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1706</span>     <span class="n">f</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1707</span>     <span class="n">mode</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1708</span>     <span class="n">encoding</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;encoding&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1709</span>     <span class="n">compression</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;compression&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1710</span>     <span class="n">memory_map</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;memory_map&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1711</span>     <span class="n">is_text</span><span class="o">=</span><span class="n">is_text</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1712</span>     <span class="n">errors</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;encoding_errors&quot;</span><span class="p">,</span> <span class="s2">&quot;strict&quot;</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1713</span>     <span class="n">storage_options</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;storage_options&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1714</span> <span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1715</span> <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+<span class="g g-Whitespace">   </span><span class="mi">1716</span> <span class="n">f</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span><span class="o">.</span><span class="n">handle</span>
+
+<span class="nn">File ~/miniconda3/envs/env1/lib/python3.11/site-packages/pandas/io/common.py:863,</span> in <span class="ni">get_handle</span><span class="nt">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
+<span class="g g-Whitespace">    </span><span class="mi">858</span> <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">859</span>     <span class="c1"># Check whether the filename is to be opened in binary mode.</span>
+<span class="g g-Whitespace">    </span><span class="mi">860</span>     <span class="c1"># Binary mode does not support &#39;encoding&#39; and &#39;newline&#39;.</span>
+<span class="g g-Whitespace">    </span><span class="mi">861</span>     <span class="k">if</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">encoding</span> <span class="ow">and</span> <span class="s2">&quot;b&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">862</span>         <span class="c1"># Encoding</span>
+<span class="ne">--&gt; </span><span class="mi">863</span>         <span class="n">handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">864</span>             <span class="n">handle</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">865</span>             <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">866</span>             <span class="n">encoding</span><span class="o">=</span><span class="n">ioargs</span><span class="o">.</span><span class="n">encoding</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">867</span>             <span class="n">errors</span><span class="o">=</span><span class="n">errors</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">868</span>             <span class="n">newline</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">869</span>         <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">870</span>     <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">871</span>         <span class="c1"># Binary mode</span>
+<span class="g g-Whitespace">    </span><span class="mi">872</span>         <span class="n">handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">)</span>
+
+<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;insurance.csv&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1668,13 +2106,22 @@ Doing binary classification
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="deep_learning_notes.html"
+       href="intro.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Deep Learning Notes</p>
+        <p class="prev-next-title">Welcome to your Jupyter Book</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="Transfer_learning.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Transfer Learning</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
